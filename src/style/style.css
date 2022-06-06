@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.Main {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #40485f;
+}
+
+.Header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 28px;
+  margin-bottom: 84px;
+}
+
+.Header-logo-title {
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+
+.content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.Character {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  width: 100%;
+}
+
+.Character-item {
+  width: 220px;
+  height: 180px;
+  margin: 0 auto;
+  margin-bottom: 112px;
+  background-color: #ffffff35;
+  border-radius: 50px 0 50px 0;
+}
+
+.Character-item a:hover {
+  transform: scale(1.5);
+}
+
+.Character-item figure {
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.Character-item figure img {
+  width: 100%;
+  position: absolute;
+  bottom: 12px;
+  border-radius: 50px 50px 0 0;
+}
+
+.Character-item h2 {
+  text-align: center;
+  margin-top: 115px;
+}
+
+.Character-inner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #FFF;
+}
+
+.Character-inner-image {
+  width: 300px;
+  text-align: center;
+}
+
+.Character-inner-image figure img {
+  max-width: 250px;
+  border-radius: 50%;
+}
+
+.Character-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 250px;
+  padding: 16px;
+  margin-bottom: 42px;
+  background-color: #ffffff35;
+  border-radius: 8px;
+}
+
+@media screen and (min-width: 768px ) {
+  .Character-inner {
+    flex-direction: row;
+  }
+}
